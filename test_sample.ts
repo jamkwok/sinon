@@ -44,8 +44,8 @@ describe.only('clients#channelmanager', () => {
             country: 'country'
           }
         )
-        .then(res => {
-          assert(res, 'xxxx-xxxxx-xxx-xxxx')
+        .then(uuid => {
+          assert(uuid === 'xxxx-xxxxx-xxx-xxxx')
         })
     })
   })
